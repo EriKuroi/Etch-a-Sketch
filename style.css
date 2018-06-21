@@ -1,0 +1,30 @@
+body{
+
+
+}
+#board{
+
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80vw;
+
+
+}
+.cell{
+
+      height: 7vh;
+      width: 5vw;
+      outline: solid 1px #000000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+.color{
+    background-color: black;
+}
+#clear{
+    float: right;
+}
