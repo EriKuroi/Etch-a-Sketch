@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded', function () {
     const clear = document.getElementById('clear');
     const newPad = document.getElementById('newPad');
     const newMode = document.getElementById('newMode');
-    //const allCells = document.querySelectorAll('.cell');
     let state = 'black';
     createPad(40);
 
