@@ -36,10 +36,10 @@ window.addEventListener('DOMContentLoaded', function () {
     function paint(cell) {
         const randomHsl = () => `hsla(${Math.random() * 360}, 100%, 50%, 1)`;
         const color = {
-            blackState: 'black',
-            rainbowState: randomHsl()
+            black: 'black',
+            rainbow: randomHsl()
         }
-        state === 'black' ? cell.style.backgroundColor = color.blackState : cell.style.backgroundColor = color.rainbowState;
+        cell.style.backgroundColor = color[state];
 
     }
 
