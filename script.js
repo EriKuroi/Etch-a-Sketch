@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function createPad(cellsRowQuantity) {
         setSide = Number(cellsRowQuantity);
-        if (setSide == 0 || isNaN(setSide)) {
+        if (setSide == 0 || isNaN(setSide) || setSide > 62) {
             return console.log('wrong');
         } else {
             console.log(setSide);
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     })
     newPad.addEventListener('click', function () {
-        const newPadSide = window.prompt('Insert quantity of cells in a row', '40');
+        const newPadSide = window.prompt('Insert quantity of cells in a row (from 1 to 62)', '40');
         createPad(newPadSide);
     })
     newMode.addEventListener('click', function () {
